@@ -1,0 +1,5 @@
+{
+  "name": "FormFlow AI",
+  "description": "A powerful Typeform-like form builder and runner with AI capabilities, supporting complex question types, groups, and logic.",
+  "requestFramePermissions": []
+}

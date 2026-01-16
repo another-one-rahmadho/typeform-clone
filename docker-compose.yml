@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: formflow-ai
+    ports:
+      - "3000:80"
+    environment:
+      # Masukkan API Key Anda di sini atau buat file .env
+      - API_KEY=${API_KEY}
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+    restart: unless-stopped
